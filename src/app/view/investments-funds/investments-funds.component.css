@@ -1,0 +1,17 @@
+.item-apply{
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+:host{
+    width: 100%;
+}
+
+.card-apply{
+    border: solid 1px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #dcddd8af;
+    width: 50%;
+    margin: 15px;
+}

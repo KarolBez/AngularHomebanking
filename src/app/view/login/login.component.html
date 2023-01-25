@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login - Banco XYZ</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Banco XYZ</h1>
+
+      <!-- <form [formGroup]="loginForm" novalidate>
+        <input type="number" min="100" formControlName="amount">
+        <button (click)="validateCalc()" [disabled]="loginForm.controls['amount'].invalid">Continuar</button>
+        {{loginForm.controls['amount'].invalid}}
+    </form> -->
+
+      <form [formGroup]="loginForm" novalidate>
+        <label for="username">ID de usuário:</label>
+        <input type="text" id="username" name="username" formControlName="user">
+        <br>
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" formControlName="password">
+        <br>
+        <button (click)="validateLogin()" >Entrar</button>
+      </form>
+      
+    </div>
+  </body>
+</html>

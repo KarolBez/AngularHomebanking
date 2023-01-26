@@ -1,26 +1,26 @@
 <div class="component-container">
     <div class="title-page">
         <h2>Home</h2>
-        <button (click)="offLogin()">Sair</button>
+        <button (click)="offLogin()">Click here to leave</button>
     </div>
 
     <div class="container">
         <div class="card-home see-more flex-box-card">
-                <h2 class="p-name">Olá, {{clientLogged.name}}</h2>
+                <h2 class="p-name">Hello, {{clientLogged.name}}</h2>
                 <div>
-                    <span>Saldo</span>
-                    <h2 class="saldo">{{clientLogged.balance | currency}}</h2>
+                    <span>Balance</span>
+                    <h2 class="Balance">{{clientLogged.balance | currency}}</h2>
                 </div>
         </div>
 
         <div class="card-home see-more flex-box-card">
-            <h2>Seus Investimentos</h2>
-            <button (click)="goToMyInvestments()">Meus Investimentos</button>
+            <h2>Your Investiments</h2>
+            <button (click)="goToMyInvestments()">My Investments</button>
         </div>
 
         <div class="card-home see-more flex-box-card">
-            <h2>Lista de Investimentos</h2>
-            <button (click)="goToFunds()">Ver investimentos</button>
+            <h2>List of Investments</h2>
+            <button (click)="goToFunds()">See Investments</button>
         </div>
 
 

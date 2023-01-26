@@ -2,7 +2,7 @@ import { InvestmentModel } from "../model/investments.model";
 
 export const InvestmentMock: InvestmentModel[]  = [
 {    
-    name: "CDB CDI",
+    name: "CDB/CDI",
     idFund:"1",
     category: "RENDA FIXA",
     profitability: 3.5
@@ -16,7 +16,7 @@ export const InvestmentMock: InvestmentModel[]  = [
 {    
     name: "TIJOLO",
     idFund:"3",
-    category: "IMOBILIARIO",
+    category: "IMOBILIÁRIO",
     profitability: 3.5
 }, 
 {

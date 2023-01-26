@@ -10,7 +10,7 @@ export class InvestmentServiceService {
   clientMock = ClientMock;
 
   saveJson() {
-    localStorage.setItem('1', JSON.stringify("KELVIN DATA"));
+    localStorage.setItem('1', JSON.stringify("KAROLDATA"));
   }
 
   saveClientLocalData(obj: ClientModel) {

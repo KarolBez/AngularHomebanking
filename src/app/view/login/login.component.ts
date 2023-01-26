@@ -33,14 +33,14 @@ export class LoginComponent implements OnInit {
     //Se o cliente existe, ele verifica a senha
     if(this.clientData){
       if(this.clientData.password == this.loginForm.value.password){
-        alert('Login realizado com sucesso');
+        alert('Login performed successfully');
         this.InvestmentService.saveClientLocalData(this.clientData);
         this._router.navigateByUrl('/home');
       }else{
-        alert('Login não realizado');
+        alert('Login not performed');
       }
     }else{
-      alert("Usuario não encontrado");
+      alert("User not found");
     } 
   }
 

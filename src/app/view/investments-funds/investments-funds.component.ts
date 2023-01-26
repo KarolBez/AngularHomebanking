@@ -53,7 +53,7 @@ export class InvestmentsFundsComponent implements OnInit {
     if(userBalance >= valueToInvest){
       this.confirmInvestment();
     }else{
-      window.alert('Saldo insuficiente');
+      window.alert("Insufficient balance");
     }
 
   }
@@ -78,7 +78,7 @@ export class InvestmentsFundsComponent implements OnInit {
     //Atualiza o localStorage do cliente
     this.InvestmentService.saveClientLocalData(this.client);
 
-    window.alert("Investimento realizado com sucesso");
+    window.alert("Investment made successfully");
     console.log('Client', this.client);
     this.goToHome();
   }

@@ -2,43 +2,43 @@
 
 <div class="funds" *ngIf="!goToApplyInvestment">
     <div class="title-page">
-        <h1>Fundos de Investimento</h1>
-        <button (click)="offLogin()">Sair</button>
+        <h1>Investment Funds</h1>
+        <button (click)="offLogin()">Click here to leave</button>
     </div>
     
   <div class="container-funds">
     <div class="funds-title">
-      <p class="funds-item" style="margin-left: 15px;">Nome</p>
-      <p class="funds-item">Tipo</p>
-      <p class="funds-item">Rentabilidade</p>
+      <p class="funds-item" style="margin-left: 15px;">Name</p>
+      <p class="funds-item">Type</p>
+      <p class="funds-item">Profitability</p>
     </div>
     <div class="fund flex-box" *ngFor="let item of investment">
         <p class="fund-name funds-item" style="margin-left: 15px;">{{item.name}}</p>
         <p class="funds-item">{{item.category}}</p>
         <p class="funds-item">{{item.profitability}}</p>
-        <button (click)="applyInvestment(item)">Investir</button>
+        <button (click)="applyInvestment(item)">Click here to invest</button>
     </div>
   </div>
 </div>
 
 <div class="funds-apply" *ngIf="goToApplyInvestment" >
     <div class="title-page">
-        <h2>Aplicação de Investimento</h2>
+        <h2>Investment application</h2>
         <button (click)="offLogin()">Sair</button>
     </div>
     <div class="card-apply">
       <div class="card-apply-investment">
           <!-- <h2>Fundo A</h2> -->
           <div class="item-apply flex-box">
-              <p class="font-bold">Nome: </p>
+              <p class="font-bold">Name: </p>
               <p> {{selectedInvestment.name}}</p>
           </div>
           <div class="item-apply flex-box">
-              <p class="font-bold">Categoria: </p>
+              <p class="font-bold">Category: </p>
               <p> {{selectedInvestment.category}}</p>
           </div>
           <div class="item-apply flex-box">
-              <p class="font-bold">Rentabilidade: </p>
+              <p class="font-bold">Profitability: </p>
               <p> {{selectedInvestment.profitability}}</p>
           </div>
       </div>
@@ -46,9 +46,9 @@
       <div class="form-value">
           <form [formGroup]="amountForm" novalidate>
               <input type="number" min="100" formControlName="amount">
-              <button (click)="validateCalc()" [disabled]="amountForm.controls['amount'].invalid">Continuar</button>
+              <button (click)="validateCalc()" [disabled]="amountForm.controls['amount'].invalid">Click here to continue</button>
               <br>
-              <span>Valor minimo de 100.</span>
+              <span>Minimum value of 100.</span>
           </form>
       </div>
     </div>
@@ -56,7 +56,7 @@
 
 
 <div>
-  <button (click)="goHome()" class="margin-p">Voltar para o inicio</button>
+  <button (click)="goHome()" class="margin-p">Back to top</button>
 </div>
 
 

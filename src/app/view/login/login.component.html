@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Login - Banco XYZ</title>
+    <title>Login - Bank</title>
   </head>
   <body>
     <div class="container">
-      <h1>Banco XYZ</h1>
+      <h1>Bank Techvetti</h1>
 
       <!-- <form [formGroup]="loginForm" novalidate>
         <input type="number" min="100" formControlName="amount">
@@ -14,10 +14,10 @@
     </form> -->
 
       <form [formGroup]="loginForm" novalidate>
-        <label for="username">ID de usuário:</label>
+        <label for="username">ID:</label>
         <input type="text" id="username" name="username" formControlName="user">
         <br>
-        <label for="password">Senha:</label>
+        <label for="password">Password:</label>
         <input type="password" id="password" name="password" formControlName="password">
         <br>
         <button (click)="validateLogin()" >Entrar</button>

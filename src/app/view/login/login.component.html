@@ -13,15 +13,22 @@
         {{loginForm.controls['amount'].invalid}}
     </form> -->
 
-      <form [formGroup]="loginForm" novalidate>
-        <label for="username">ID:</label>
-        <input type="text" id="username" name="username" formControlName="user">
+    <form [formGroup]="loginForm" novalidate>
+    
+    <div class="main-login">
+    <div class = "card-login">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" formControlName="user" placeholder="Enter your username">
         <br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" formControlName="password">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" formControlName="password" placeholder="Enter your password">
+        </div>
+        </div>
+      <a href="#" id = "Forgot-pass" >Forgot your password ?</a>
         <br>
-        <button (click)="validateLogin()" >Entrar</button>
-      </form>
+        <br>
+      <button (click)="validateLogin()" >Login</button>
+        </form>
       
     </div>
   </body>

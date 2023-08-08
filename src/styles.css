@@ -1,0 +1,71 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%;  font-family: Roboto, "Helvetica Neue", sans-serif; }
+body, h2, p { margin: 0; }
+
+.mat-typography p{
+    margin: 0;
+}
+
+.component-container{
+    width: 100%;
+}
+
+.title-page{
+    border-bottom: solid 1px #f2f2f2;
+    padding: 20px 0 0 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.funds-title{
+    display: flex;
+    border-bottom: 1px solid #f2f2f2;
+    padding: 10px 0;
+}
+
+.margin-left{
+    margin-left: 15px;
+}
+
+.funds-item{
+    width: 200px;
+}
+
+.fund{
+    border-bottom: solid 2px #f8f8f8;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+button{
+    border: none;
+    background-color: #f8fa87;
+    padding: 10px 20px;
+    font-weight: 700;
+}
+button:hover{
+    background-color: #c3c45c;
+}
+
+.see-more{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.flex-box{
+    display: flex;
+}
+
+.font-bold{
+    font-weight: 700;
+}
+
+.container-funds{
+    width: 50%;
+}
+
+.margin-p{
+    margin: 15px;
+}

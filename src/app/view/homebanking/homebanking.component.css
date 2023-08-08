@@ -1,0 +1,38 @@
+.p-name{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+.container{
+    padding: 10px 20px;
+    width: 800px;
+}
+
+.name-div{
+    width: 30%;
+    border-right: solid 2px;
+    margin-right: 20px;
+}
+
+:host{
+    width: 100%;
+}
+
+
+.card-home{
+    border: solid 1px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #4164af;
+    color: white;
+}
+
+.flex-box-card{
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-box-card h2{
+    margin: auto 0;
+}

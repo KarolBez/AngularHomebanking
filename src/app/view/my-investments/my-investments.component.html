@@ -1,0 +1,28 @@
+<div class="funds">
+    <div class="title-page">
+        <h1>My Investments</h1>
+        <button (click)="offLogin()">Click here to leave</button>
+    </div>
+    <div class="container-funds" *ngIf="!noInvestment">
+        <div class="funds-title">
+            <p class="funds-item" style="margin-left: 15px;">Name</p>
+            <p class="funds-item">Type</p>
+            <p class="funds-item">Profitability</p>
+        </div>
+        <div class="fund flex-box" *ngFor="let item of clientData.investments">
+            <p class="fund-name funds-item" style="margin-left: 15px;">{{item.investment.name}}</p>
+            <p class="fund-name funds-item">{{item.investment.category}}</p>
+            <p class="fund-name funds-item">{{item.investment.profitability}}</p>
+            <button (click)="recuseValue(item)">Click here to redeem</button>
+        </div>
+    </div>
+
+    <div *ngIf="noInvestment" class="margin-p">
+        <h2>You have no investment at the moment</h2>
+    </div>
+
+    <div>
+        <button (click)="goHome()" class="margin-p">Back to top</button>
+      </div>
+    
+</div>

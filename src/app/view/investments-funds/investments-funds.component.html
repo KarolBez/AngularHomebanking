@@ -1,0 +1,101 @@
+
+
+<div class="funds" *ngIf="!goToApplyInvestment">
+    <div class="title-page">
+        <h1>Investment Funds</h1>
+        <button (click)="offLogin()">Click here to leave</button>
+    </div>
+    
+  <div class="container-funds">
+    <div class="funds-title">
+      <p class="funds-item" style="margin-left: 15px;">Name</p>
+      <p class="funds-item">Type</p>
+      <p class="funds-item">Profitability</p>
+    </div>
+    <div class="fund flex-box" *ngFor="let item of investment">
+        <p class="fund-name funds-item" style="margin-left: 15px;">{{item.name}}</p>
+        <p class="funds-item">{{item.category}}</p>
+        <p class="funds-item">{{item.profitability}}</p>
+        <button (click)="applyInvestment(item)">Click here to invest</button>
+    </div>
+  </div>
+</div>
+
+<div class="funds-apply" *ngIf="goToApplyInvestment" >
+    <div class="title-page">
+        <h2>Investment application</h2>
+        <button (click)="offLogin()">Sair</button>
+    </div>
+    <div class="card-apply">
+      <div class="card-apply-investment">
+          <!-- <h2>Fundo A</h2> -->
+          <div class="item-apply flex-box">
+              <p class="font-bold">Name: </p>
+              <p> {{selectedInvestment.name}}</p>
+          </div>
+          <div class="item-apply flex-box">
+              <p class="font-bold">Category: </p>
+              <p> {{selectedInvestment.category}}</p>
+          </div>
+          <div class="item-apply flex-box">
+              <p class="font-bold">Profitability: </p>
+              <p> {{selectedInvestment.profitability}}</p>
+          </div>
+      </div>
+      
+      <div class="form-value">
+          <form [formGroup]="amountForm" novalidate>
+              <input type="number" min="100" formControlName="amount">
+              <button (click)="validateCalc()" [disabled]="amountForm.controls['amount'].invalid">Click here to continue</button>
+              <br>
+              <span>Minimum value of 100.</span>
+          </form>
+      </div>
+    </div>
+</div>
+
+
+<div>
+  <button (click)="goHome()" class="margin-p">Back to top</button>
+</div>
+
+
+
+ 
+
+  <!-- <head>
+    <title>Fundos de Investimentos</title>
+  </head>
+  <body>
+    <h1>Fundos de Investimentos</h1>
+    <ul>
+      <li>
+        <h2>Fundo de Ações</h2>
+        <p>Descrição: Este fundo investe em ações de empresas de diferentes setores.</p>
+        <p>Risco: Alto</p>
+      </li>
+      <li>
+        <h2>Fundo de Renda Fixa</h2>
+        <p>Descrição: Este fundo investe em títulos de renda fixa, como títulos públicos e de crédito privado.</p>
+        <p>Risco: Baixo</p>
+      </li>
+      <li>
+        <h2>Fundo Imobiliário</h2>
+        <p>Descrição: Este fundo investe em imóveis, como prédios comerciais e residenciais.</p>
+        <p>Risco: Médio</p>
+      </li>
+      <li>
+        <h2>Fundo Multimercado</h2>
+        <p>Descrição: Este fundo investe em diferentes tipos de ativos, como ações, renda fixa e câmbio.</p>
+        <p>Risco: Médio a alto</p>
+      </li>
+      <li>
+        <h2>Fundo de Curto Prazo</h2>
+        <p>Descrição: Este fundo investe em títulos de renda fixa de curto prazo.</p>
+        <p>Risco: Baixo</p>
+      </li>
+    </ul>
+  </body> -->
+
+ 
+ 

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login - Bank</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Bank Techvetti</h1>
+
+      <!-- <form [formGroup]="loginForm" novalidate>
+        <input type="number" min="100" formControlName="amount">
+        <button (click)="validateCalc()" [disabled]="loginForm.controls['amount'].invalid">Continuar</button>
+        {{loginForm.controls['amount'].invalid}}
+    </form> -->
+
+    <form [formGroup]="loginForm" novalidate>
+    
+    <div class="main-login">
+    <div class = "card-login">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" formControlName="user" placeholder="Enter your username">
+        <br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" formControlName="password" placeholder="Enter your password">
+        </div>
+        </div>
+      <a href="#" id = "Forgot-pass" >Forgot your password ?</a>
+        <br>
+        <br>
+      <button (click)="validateLogin()" >Login</button>
+        </form>
+      
+    </div>
+  </body>
+</html>
